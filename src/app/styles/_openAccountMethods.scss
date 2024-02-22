@@ -1,0 +1,30 @@
+.card-method {
+    background-color: $white;
+    box-shadow: rem(4px) rem(4px) rem(32px) rem(8px) $shadow;
+    box-shadow: rem(-4px) rem(-4px) rem(32px) rem(8px) $shadow;
+    border-radius: rem(16px);
+
+    svg path {
+        stroke: $secondary-900;
+    }
+
+    &.active {
+        background-color: $secondary-50;
+        box-shadow: rem(8px) rem(8px) rem(16px) 0px $secondary-shadow;
+        box-shadow: rem(-8px) rem(-8px) rem(16px) 0px $secondary-shadow;
+
+        svg path {
+            stroke: $primary-900;
+        }
+    }
+}
+    
+.method-img {
+    height: rem(164px);
+    width: rem(209px);
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+

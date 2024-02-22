@@ -1,0 +1,34 @@
+.accordion {
+    border: 1px solid $success-100;
+    margin: 0px;
+    padding: 0px;
+    border-radius: rem(16px);
+}
+
+.accordion-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(20px) rem(32px);
+
+    &.active{
+        background-color: $secondary-100;
+        border-top-left-radius: rem(16px);
+        border-top-right-radius: rem(16px);
+    }
+    
+    svg path {
+        stroke: $secondary-500;
+    }
+
+    &.accordion-content {
+        background-color: $secondary-50;
+        border-bottom-left-radius: rem(16px);
+        border-bottom-right-radius: rem(16px);
+    }
+
+    &:hover:not(.active, .accordion-content) {
+        background-color: $secondary-50;
+        border: 1px solid $secondary-500;
+        border-radius: rem(16px);
+   }
+}
