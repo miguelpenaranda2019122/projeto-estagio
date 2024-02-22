@@ -1,14 +1,21 @@
 .accordion {
-    border: 1px solid $success-100;
     margin: 0px;
     padding: 0px;
     border-radius: rem(16px);
+    border: 1px solid $secondary-50;
+    
+    &:hover{
+        border-color:$secondary-500 ;
+    }
 }
 
 .accordion-principal {
     display: flex;
     justify-content: space-between;
     padding: rem(20px) rem(32px);
+    
+
+
 
     &.active{
         background-color: $secondary-100;
@@ -28,7 +35,6 @@
 
     &:hover:not(.active, .accordion-content) {
         background-color: $secondary-50;
-        border: 1px solid $secondary-500;
         border-radius: rem(16px);
    }
 }

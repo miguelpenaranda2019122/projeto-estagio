@@ -39,14 +39,14 @@ export default function AccordionContainer({title, contentList, ...props} : {tit
 
     return (
 
-        <>
+        <div className="container-xl d-grid gap-5">
             {accordionInfo.map((element, i) => (
                 <Accordion key={element.id} handleCLick={() => handleClick(i)} title = {element.title} icon={selected == i? <Minus /> : <Plus />} accordionClass={selected == i ? "accordion-principal accordion-content" : ""} activeClass={selected == i ? "active" : ""}>
                     {selected === i && 
                         <p className="m-0">{element.info}</p>}
                 </Accordion>
             ))}
-        </>
+        </div>
 
     )
 }
